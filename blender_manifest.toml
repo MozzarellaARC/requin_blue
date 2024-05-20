@@ -2,7 +2,7 @@ schema_version = "1.0.0"
 
 # Example of manifest file for a Blender extension
 # Change the values according to your extension
-id = "my_example_extension"
+id = "requin_blue_theme"
 version = "1.1.0"
 name = "Requin Blue"
 tagline = "This is a Blender theme with a major blue color"
@@ -25,7 +25,7 @@ website = "https://github.com/MozzarellaARC/Blender_Theme_Requin_Blue"
 # https://docs.blender.org/manual/en/dev/extensions/tags.html
 tags = ["Animation", "Sequencer"]
 
-blender_version_min = "4.0.0"
+blender_version_min = "4.2.0"
 # Optional: maximum supported Blender version
 # blender_version_max = "5.1.0"
 
