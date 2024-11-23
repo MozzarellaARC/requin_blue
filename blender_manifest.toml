@@ -1,6 +1,6 @@
 schema_version = "1.0.0"
 id = "requin_blue_theme"
-version = "1.1.0"
+version = "1.1.1"
 name = "Requin Blue"
 tagline = "This is a Blender theme with a major blue color"
 maintainer = "Muhamad Wicaksono <hirvi.3d@gmail.com>"
