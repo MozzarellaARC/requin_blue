@@ -6,8 +6,8 @@ tagline = "This is a Blender theme with a major blue color"
 maintainer = "Muhamad Wicaksono <hirvi.3d@gmail.com>"
 type = "theme"
 website = "https://github.com/MozzarellaARC/Blender_Theme_Requin_Blue"
-tags = ["Dark", "Inspired By"]
-blender_version_min = "3.6.0"
+tags = ["Dark"]
+blender_version_min = "4.2.0"
 license = [
   "SPDX:GPL-3.0-or-later",
 ]
