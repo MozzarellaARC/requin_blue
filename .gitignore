@@ -1,6 +1,6 @@
 
 /Reference
 /deceased
-.zip
-.tar
-.7z
+*.zip
+*.tar
+*.7z
