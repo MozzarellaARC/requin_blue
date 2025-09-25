@@ -1,5 +1,5 @@
-# PowerShell script to copy files from Blender extensions to retrieve directory
-# Source: Blender requin_blue_theme extension directory  
+# PowerShell script to copy files from Blender interface theme presets to retrieve directory
+# Source: Blender interface theme presets directory  
 # Destination: retrieve directory in current workspace
 # Usage: btheme
 
@@ -8,7 +8,7 @@ param(
 )
 
 # Define source and destination paths
-$SourcePath = "C:\Users\M\AppData\Roaming\Blender Foundation\Blender\4.5\extensions\blender_org\requin_blue_theme"
+$SourcePath = "C:\Users\M\AppData\Roaming\Blender Foundation\Blender\4.5\scripts\presets\interface_theme"
 $RetrieveDir = Join-Path (Get-Location) "retrieve"
 
 Write-Host "Requin Blue Theme File Copy Script" -ForegroundColor Cyan
@@ -27,12 +27,12 @@ if (-not (Test-Path $RetrieveDir)) {
 # Check if source directory exists
 if (-not (Test-Path $SourcePath)) {
     Write-Error "Source directory does not exist: $SourcePath"
-    Write-Host "Please verify that the Blender extension is installed and the path is correct." -ForegroundColor Red
+    Write-Host "Please verify that Blender is installed and interface themes exist in the presets directory." -ForegroundColor Red
     exit 1
 }
 
 # Get all files from source directory
-$SourceFiles = Get-ChildItem -Path $SourcePath -Recurse -File
+$SourceFiles = @(Get-ChildItem -Path $SourcePath -Recurse -File)
 
 if ($SourceFiles.Count -eq 0) {
     Write-Warning "No files found in source directory."
